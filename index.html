@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Search Page</title>
+</head>
+<body>
+    <div class="search-container">
+        <h1>Simple Search</h1>
+        <form id="search-form">
+            <label for="cuisine-select">Select Cuisine:</label>
+            <select id="cuisine-select">
+                <option value="italian">Italian</option>
+                <option value="french">French</option>
+                <option value="japanese">Japanese</option>
+                <option value="korean">Korean</option>
+            </select>
+            <button type="button" onclick="suggestFood()">Get Food Suggestion</button>
+            <p id="food-suggestion"></p>
+        </form>
+    </div>
+
+    <script src="suggestFood.js"></script>
+</body>
+</html>
